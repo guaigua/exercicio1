@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  
+
   products: any [];
   constructor() {
     this.products = [
@@ -21,3 +21,4 @@ export class DataService {
  getProducts(): any {
    return this.products;
  }
+}

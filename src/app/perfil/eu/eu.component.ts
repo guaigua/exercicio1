@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+
 
 @Component({
   selector: 'app-eu',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EuComponent implements OnInit {
 
-  constructor() { }
+  
+  productos: any;
+
+  constructor(productos: DataService) {
+   
+    this.productos = productos.getProducts();
+  }
 
   ngOnInit(): void {
   }
