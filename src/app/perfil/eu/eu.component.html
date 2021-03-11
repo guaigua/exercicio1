@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<section>
 <div class="z-depth-5 main">
     <div class="row">
         <div class="col-sm-6 picture">
@@ -7,32 +8,38 @@
         </div>
         <div class="col-sm-6 details">
            
-                <p class="name"><b>{{ meu_nome }}</b> <i class="material-icons tick">check_circle</i></p>
+                <p class="name mt-5"><b>{{ meu_nome }}</b> <i class="material-icons tick">check_circle</i></p>
             
                 <p>{{ meu_personalidade }}</p>
          
-                <p>FIND U AGAIN out now!</p>
+                <p>Meus repositórios</p>
 
                 <p> {{ url }}</p>
-                {{ productos }}
-         
+
+                <p>Minhas comidas favoritas:</p>
+                
+                <p>{{ productos }}</p>
+        
         </div>
     </div>
     <table class="table">
         <tr>
             <td>
                 <p><b>1,236</b></p>
-                <p>Posts</p>
+                <p>Postagens</p>
             </td>
             <td>
                 <p><b>767K</b></p>
-                <p>Followers</p>
+                <p>Seguidoras</p>
             </td>
             <td>
                 <p><b>892</b></p>
-                <p>Following</p>
+                <p>Seguindo</p>
             </td>
         </tr>
     </table>
-    <a class="waves-effect waves-light btn edit">Edit Profile</a>
+    <button class="waves-effect waves-light btn edit" (click)="botaoClicado()"> Contate-Nos</button>
+  
+  
 </div>
+</section>
